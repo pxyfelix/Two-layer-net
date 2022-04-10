@@ -1,8 +1,11 @@
 # 两层神经网络分类器
 
 本Repo为神经网络课程作业HW1，github链接为 <https://github.com/pxyfelix/Two-layer-net>
+
 最终模型上传到蓝奏云 <https://wwt.lanzouw.com/iEZfn02z0ppi>
+
 解压后使用numpy中load函数即可从文件besttwolayermodel.npz中获取参数
+
 作业具体要求详见HW1.pdf
 
 学生：裴晓阳，学号：21210980058
@@ -23,7 +26,7 @@
 python model.py
 ```
 
-### MNIST数据集
+### 1.1 MNIST数据集
 
 MNIST数据集可以通过网站 <http://yann.lecun.com/exdb/mnist/> 下载，包括以下4个文件
 
@@ -48,7 +51,7 @@ regularization_list = [0, 0.0001, 0.001]
 
 参数查找中每一组参数以及对应的精确度写入到文件 parameter_search.txt 当中，最佳的参数选择以及所对应模型使用numpy中的savez函数保存到besttwolayermodel.npz中。
 
-阅读parameter_search.txt可知，
+阅读parameter_search.txt可知以下最佳参数：
 
 ```
 Best learning_rate: 0.001 Best hidden_dim: 1000 Best regularization: 0.001 Best Accuracy: 0.9704
